@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const connectionString = 'mongodb://mongo:27017/cinema';
+const connectionString = "mongodb://mongo.gunish:27017/cinema";
 
 mongoose.connect(connectionString, { useNewUrlParser: true }).catch((e) => {
-  console.error('Connection error', e.message);
+  console.error("Connection error", e.message);
 });
 
 const db = mongoose.connection;
